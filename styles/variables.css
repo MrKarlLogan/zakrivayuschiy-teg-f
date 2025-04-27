@@ -13,8 +13,8 @@
   --main-font-size: 18px;
   --main-button-font-size: 14px;
   --main-padding-text: 25px;
-  --modal-size: clamp(21.5625rem, 21.3864rem + 0.7512vw, 22.0625rem);
-  --page-gradient: repeating-linear-gradient(-90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 4px, transparent 6px), repeating-linear-gradient(#d3d3d3 0px, #d3d3d3 2px, transparent 4px, transparent 6px), linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+  --modal-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
+  --page-gradient: repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px), repeating-linear-gradient(to bottom, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px), linear-gradient(to bottom, #e7e7e7, #1a1a1a);
   --core-color: #fff;
   --contour-color: #000;
   --main-body-color: #ff0000;
