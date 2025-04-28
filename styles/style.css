@@ -8,10 +8,11 @@
   align-items: center;
   background-image: var(--page-gradient);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
-  font-family: var(--accent-font, 'PressStart2P'), fantasy;
+  font-family: var(--accent-font, 'PressStart2P'), fantasy, sans-serif;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -146,7 +147,7 @@
   position: absolute;
   top: var(--top-absolute);
   right: var(--right-absolute);
-  font-family: var(--accent-font, 'PressStart2P'), sans-serif;
+  font-family: var(--accent-font, 'PressStart2P'), fantasy, sans-serif;
   font-size: var(--main-button-font-size);
   text-shadow: var(--shadow);
   mix-blend-mode: hard-light;
@@ -199,21 +200,24 @@
   outline: 2px solid transparent;
 }
 
-.card__like-button {
+.button {
   appearance: none;
-  max-inline-size: 8.125rem;
-  padding: 7px 36px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border: var(--border);
   background-color: transparent;
+  border: var(--border);
   cursor: pointer;
   transition: box-shadow .3s ease;
 }
 
+.card__like-button {
+  max-inline-size: 8.125rem;
+  padding: 7px 36px;
+  justify-content: center;
+  align-items: center;
+}
+
 .button__text {
-  font-family: var(--accent-font, 'PressStart2P');
+  font-family: var(--accent-font, 'PressStart2P'), fantasy, sans-serif;
   font-size: var(--main-button-font-size);
   color: var(--main-color);
   mix-blend-mode: difference;
@@ -233,21 +237,17 @@
 }
 
 .button-floppy {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   column-gap: 8px;
   padding: 15px 20px;
+  flex-direction: row;
+  align-items: center;
   background-color: var(--main-color);
-  border: var(--border);
-  cursor: pointer;
   position: relative;
-  transition: box-shadow .3s ease;
 }
 
 .modal {
   inline-size: var(--modal-size);
-  font-family: var(--accent-font, 'PressStart2P');
+  font-family: var(--accent-font, 'PressStart2P'), fantasy, sans-serif;
   font-size: var(--main-button-font-size);
   position: fixed;
   inset: 0;
@@ -258,12 +258,9 @@
 }
 
 .modal__button {
-  appearance: none;
   inline-size: 100%;
-  background-color: transparent;
-  border: var(--border);
   padding-block: 10px;
-  cursor: pointer;
+  justify-content: center;
 }
 
 .modal__text {
